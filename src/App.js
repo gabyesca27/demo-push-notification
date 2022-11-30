@@ -37,7 +37,9 @@ function App() {
     // y quiere ser respetuoso, no hay necesidad de molestarlo.
   }
   useEffect(() => {
-    notifyMe();
+    setInterval(() => {
+      notifyMe();
+    }, 10000)
   }, []);
 
   return (
